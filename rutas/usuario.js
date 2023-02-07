@@ -12,7 +12,6 @@ const eschemausuario= new eschema({
     nombre: {type: String, requiere: true, unique: true},
     correo: {type: String, unique: true},
     contraseña: {type: String, requiere: true},
-    direccion: {type: String, requiere: true},
     celular: {type: Number, requiere: true}
 
 });
