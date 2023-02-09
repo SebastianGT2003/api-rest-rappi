@@ -18,10 +18,6 @@ app.use('/api/usuario', rutausuario)
 
 
 app.get("/productos", controllers.Productos);
-app.get("/productos-en-carrito", controllers.ProductosEnCarrito);
-app.post("/productos-en-carrito", controllers.AgregarProducto);
-app.put("/productos-en-carrito:productoId", controllers.ManejoDeProductos);
-app.delete("/productos-en-carrito:productoId", controllers.EliminarProdcutoDeCarrito);
 
 //Configurar server basico
 
