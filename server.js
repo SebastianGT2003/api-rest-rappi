@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({extended:'true'}))
 app.use('/api/usuario', rutausuario)
 
 
-app.get("/productos", controllers.Productos);
+app.get("/products", controllers.Productos);
 
 //Configurar server basico
 

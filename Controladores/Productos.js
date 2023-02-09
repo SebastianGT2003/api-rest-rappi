@@ -1,13 +1,12 @@
-const Producto = require("../rutas/Producto");
+const Product = require("../rutas/Producto");
 
-const productos = async (req, res) => {
-  const products = await Producto.find();
+const getProducts = (req, res) => {
+  model.find({}, (err, docs) => {
+    res.send({
+      docs
+    })
+  })
 
-  if (products) {
-    res.json({ products });
-  } else {
-    res.json({ mensaje: "No hay productos" });
-  }
-};
+}
 
-module.exports = productos;
+module.exports = getProducts;
